@@ -291,7 +291,7 @@ def send_weekly_message_to_slack(bug_tickets):
         print(f'No bug ticket for the week.')
         return
     #construct the base message and then append the ticket name url etc in the next line 
-    message = f'Check if all the Bug tickets for current week are responded and closed:'
+    message = f'Check if all the Bug tickets for current week are responded and closed: \n'
                
     #iterates through each tickets from the list which is made of bug tickets of the current week  
     for ticket in bug_tickets:
